@@ -76,7 +76,7 @@ input[type=submit]:hover {
   </div>
   <div class="row">
     <div class="column">
-      <img src="https://www.w3schools.com/html/workplace.jpg" style="width:100%">
+      <img src="https://st2.depositphotos.com/4612235/10319/i/950/depositphotos_103196114-stock-photo-laptop-computer-phone-and-coffee.jpg" style="width:100%">
     </div>
     <div class="column">
       <form action="/action_page.php">
