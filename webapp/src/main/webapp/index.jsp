@@ -1,166 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mr. Camel</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    @import url("https://tse3.mm.bing.net/th/id/OIP.VcHE2k2zlYITte1SQZhOfAHaE8?pid=ImgDet&rs=1");
-
-    body {
-      margin: 0;
-      box-sizing: border-box;
-    }
-
-    .container {
-      line-height: 150%;
-    }
-
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px;
-      background-color: #e9e9e9;
-    }
-
-    .header h1 {
-      color: #222222;
-      font-size: 30px;
-      font-family: "Pacifico", cursive;
-    }
-
-    .header .social a {
-      padding: 0 5px;
-      color: #222222;
-    }
-
-    .left {
-      float: left;
-      width: 180px;
-      margin: 0;
-      padding: 1em;
-    }
-
-    .content {
-      margin-left: 190px;
-      border-left: 1px solid #d4d4d4;
-      padding: 1em;
-      overflow: hidden;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-    }
-
-    li a {
-      display: block;
-      color: #000;
-      padding: 8px 16px;
-      text-decoration: none;
-    }
-
-    li a.active {
-      background-color: #84e4e2;
-      color: white;
-    }
-
-    li a:hover:not(.active) {
-      background-color: #29292a;
-      color: white;
-    }
-
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-      margin: 30px 0;
-    }
-
-    td,
-    th {
-      border: 1px solid #dddddd;
-      padding: 8px;
-    }
-
-    tr:nth-child(1) {
-      background-color: #84e4e2;
-      color: white;
-    }
-
-    tr td i.fas {
-      display: block;
-      font-size: 35px;
-      text-align: center;
-    }
-
-    .footer {
-      padding: 55px 20px;
-      background-color: #2e3550;
-      color: white;
-      text-align: center;
-    }
-  </style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
 </head>
 <body>
+<h2>Responsive Contact Section</h2>
+<p>Resize the browser window to see the effect.</p>
 <div class="container">
-<header class="header">
-<h1>Mr. Camel</h1>
-<div class="social">
-<a href="#"><i class="fab fa-facebook"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-twitter"></i></a>
-</div>
-</header>
-<aside class="left">
-<img src="./assets/html/mr-camel.jpg" width="160px" />
-<ul>
-<li><a class="active" href="#home">Home</a></li>
-<li><a href="#career">Career</a></li>
-<li><a href="#contact">Contact</a></li>
-<li><a href="#about">About</a></li>
-</ul>
-<br><br>
-<p>"Do something important in life. I convert green grass to code."<br>- Mr Camel</p>
-</aside>
-<main class="content">
-<h2>About Me</h2>
-<p>I don't look like some handsome horse, but I am a real desert king. I can servive days without water.</p>
-<h2>My Career</h2>
-<p>I work as a web developer for a company that makes websites for camel businesses.</p>
-<hr><br>
-<h2>How Can I Help You?</h2>
-<table>
-<tr>
-<th>SKILL 1</th>
-<th>SKILL 2</th>
-<th>SKILL 3</th>
-</tr>
-<tr>
-<td><i class="fas fa-broom"></i></td>
-<td><i class="fas fa-archive"></i></td>
-<td><i class="fas fa-trailer"></i></td>
-</tr>
-<tr>
-<td>Cleaning kaktus in your backyard</td>
-<td>Storing some fat for you</td>
-<td>Taking you through the desert</td>
-</tr>
-<tr>
-</table>
-<form>
-<label>Email: <input type="text" name="email"></label><br>
-<label> Mobile: <input type="text" name="mobile"> </label><br>
-<textarea name="comments" rows="4">Enter your message</textarea><br>
-<input type="submit" value="Submit" /><br>
-</form>
-</main>
-<footer class="footer">&copy; Copyright Mr. Camel</footer>
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://www.w3schools.com/html/workplace.jpg" style="width:100%">
+      <img src="https://st2.depositphotos.com/4612235/10319/i/950/depositphotos_103196114-stock-photo-laptop-computer-phone-and-coffee.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
 </div>
 </body>
 </html>
