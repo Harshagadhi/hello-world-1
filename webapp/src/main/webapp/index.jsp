@@ -1,102 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
 
-* {
-  box-sizing: border-box;
-}
-
-/* Style inputs */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Style the container/contact section */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
-}
-
-/* Create two columns that float next to eachother */
-.column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-</style>
 </head>
 <body>
-
-<h2>Responsive Contact Section</h2>
-<p>Resize the browser window to see the effect.</p>
-
-<div class="container">
-  <div style="text-align:center">
-    <h2>Contact Us</h2>
-    <p>Swing by for a cup of coffee, or leave us a message:</p>
-  </div>
-  <div class="row">
-    <div class="column">
-      <img src="https://st2.depositphotos.com/4612235/10319/i/950/depositphotos_103196114-stock-photo-laptop-computer-phone-and-coffee.jpg" style="width:100%">
+    <div class="navbar">
+        <ul>
+            <div class="nav-search-items">
+                <img src="assets/images/logo.png" class="nav-logo">
+                <input class="nav-searchbar" type="text" placeholder="Search for products, brands and more...">
+                <i class="mdi mdi-magnify"></i>
+            </div>
+            <li><a href="#" class="nav-homebtn"><i class="mdi mdi-home"></i> home</a></li>
+            <li><a href="#" class="nav-categoriesbtn"><i class="mdi mdi-shape"></i> categories</a></li>
+            <li><a href="#" class="nav-cartbtn"><i class="mdi mdi-cart"></i> cart</a></li>
+            <li><a href="#" class="nav-categoriesbtn"><i class="mdi mdi-login"></i> login</a></li>
+        </ul>
     </div>
-    <div class="column">
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-  </div>
-</div>
+    
+    <div class="container">
+        <div class="header">
 
+            <ul class="header-images-ul">
+                <li><a href="#"><img src="/assets/images/header/top-offers.png" class="header-images"></a></li>
+                <li><a href="#"><img src="/assets/images/header/grocery.png" class="header-images"></a></li>
+                <li><a href="#"><img src="/assets/images/header/mobiles.png" class="header-images"></a></li>
+                <li><a href="#"><img src="/assets/images/header/fashion.png" class="header-images"></a></li>
+                <li><a href="#"><img src="/assets/images/header/electronics.png" class="header-images"></a></li>
+                <li><a href="#"><img src="/assets/images/header/home.jpg" class="header-images"></a></li>
+                <li><a href="#"><img src="/assets/images/header/appliances.png" class="header-images"></a></li>
+                <li><a href="#"><img src="/assets/images/header/travel.png" class="header-images"></a></li>
+                <li><a href="#"><img src="/assets/images/header/beauty-toys.png" class="header-images"></a></li>
+            </ul>
+
+            <ul class="header-items-ul">
+                <li><a href="#" class="header-items">Top Offers</a></li>
+                <li><a href="#" class="header-items">Grocery</a></li>
+                <li><a href="#" class="header-items">Mobiles</a></li>
+                <li><a href="#" class="header-items">Fashion</a></li>
+                <li><a href="#" class="header-items">Electronics</a></li>
+                <li><a href="#" class="header-items">Home</a></li>
+                <li><a href="#" class="header-items">Appliances</a></li>
+                <li><a href="#" class="header-items">Travel</a></li>
+                <li><a href="#" class="header-items">Toys & more</a></li>
+            </ul>
+        </div>
+        
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="assets/images/carousel/slide1.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="assets/images/carousel/slide2.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets/images/carousel/slide3.jpg" style="width:100%">
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <ul>
+            <div class="footer-items">
+                <li><a href="#" class="footer-sellonbtn"><i class="mdi mdi-briefcase-check"></i>seller</a></li>
+                <li><a href="#" class="footer-advertisebtn"><i class="mdi mdi-star-circle"></i>advertise</a></li>
+                <li><a href="#" class="footer-helpbtn"><i class="mdi mdi-help-circle"></i>help</a></li>
+                <li><a href="#" class="footer-contactbtn"><i class="mdi mdi-phone-classic"></i>contact</a></li>
+            </div>
+            <div class="payment-method">
+                <img src="assets/images/payment/visa.png" class="payment-cards">
+                <img src="assets/images/payment/maestro.png" class="payment-cards">
+                <img src="assets/images/payment/discover.png" class="payment-cards">
+                <img src="assets/images/payment/americanexpress.png" class="payment-cards">
+                <img src="assets/images/payment/americanexpress02.png" class="payment-cards">
+                <img src="assets/images/payment/cirrus.png" class="payment-cards">
+                <img src="assets/images/payment/dinersclub.png" class="payment-cards">
+                <img src="assets/images/payment/directdebit.png" class="payment-cards">
+                <img src="assets/images/payment/egold.png" class="payment-cards">
+                <img src="assets/images/payment/paypal.png" class="payment-cards">
+            </div>
+        </ul>
+    </div>
+    <script src="assets/js/carousel.js" defer="defer" crossorigin="anonymous"></script>
 </body>
 </html>
