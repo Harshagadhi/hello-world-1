@@ -1,106 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipkart</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
-    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr. Camel</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      line-height: 150%;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      background-color: #e9e9e9;
+    }
+
+    .header h1 {
+      color: #222222;
+      font-size: 30px;
+      font-family: "Pacifico", cursive;
+    }
+
+    .header .social a {
+      padding: 0 5px;
+      color: #222222;
+    }
+
+    .left {
+      float: left;
+      width: 180px;
+      margin: 0;
+      padding: 1em;
+    }
+
+    .content {
+      margin-left: 190px;
+      border-left: 1px solid #d4d4d4;
+      padding: 1em;
+      overflow: hidden;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a.active {
+      background-color: #84e4e2;
+      color: white;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #29292a;
+      color: white;
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      padding: 8px;
+    }
+
+    tr:nth-child(1) {
+      background-color: #84e4e2;
+      color: white;
+    }
+
+    tr td i.fas {
+      display: block;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    .footer {
+      padding: 55px 20px;
+      background-color: #2e3550;
+      color: white;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <div class="navbar">
-        <ul>
-            <div class="nav-search-items">
-                <img src="assets/images/logo.png" class="nav-logo">
-                <input class="nav-searchbar" type="text" placeholder="Search for products, brands and more...">
-                <i class="mdi mdi-magnify"></i>
-            </div>
-            <li><a href="#" class="nav-homebtn"><i class="mdi mdi-home"></i> home</a></li>
-            <li><a href="#" class="nav-categoriesbtn"><i class="mdi mdi-shape"></i> categories</a></li>
-            <li><a href="#" class="nav-cartbtn"><i class="mdi mdi-cart"></i> cart</a></li>
-            <li><a href="#" class="nav-categoriesbtn"><i class="mdi mdi-login"></i> login</a></li>
-        </ul>
-    </div>
-    
-    <div class="container">
-        <div class="header">
-
-            <ul class="header-images-ul">
-                <li><a href="#"><img src="/assets/images/header/top-offers.png" class="header-images"></a></li>
-                <li><a href="#"><img src="/assets/images/header/grocery.png" class="header-images"></a></li>
-                <li><a href="#"><img src="/assets/images/header/mobiles.png" class="header-images"></a></li>
-                <li><a href="#"><img src="/assets/images/header/fashion.png" class="header-images"></a></li>
-                <li><a href="#"><img src="/assets/images/header/electronics.png" class="header-images"></a></li>
-                <li><a href="#"><img src="/assets/images/header/home.jpg" class="header-images"></a></li>
-                <li><a href="#"><img src="/assets/images/header/appliances.png" class="header-images"></a></li>
-                <li><a href="#"><img src="/assets/images/header/travel.png" class="header-images"></a></li>
-                <li><a href="#"><img src="/assets/images/header/beauty-toys.png" class="header-images"></a></li>
-            </ul>
-
-            <ul class="header-items-ul">
-                <li><a href="#" class="header-items">Top Offers</a></li>
-                <li><a href="#" class="header-items">Grocery</a></li>
-                <li><a href="#" class="header-items">Mobiles</a></li>
-                <li><a href="#" class="header-items">Fashion</a></li>
-                <li><a href="#" class="header-items">Electronics</a></li>
-                <li><a href="#" class="header-items">Home</a></li>
-                <li><a href="#" class="header-items">Appliances</a></li>
-                <li><a href="#" class="header-items">Travel</a></li>
-                <li><a href="#" class="header-items">Toys & more</a></li>
-            </ul>
-        </div>
-        
-        <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="assets/images/carousel/slide1.jpg" style="width:100%">
-            </div>
-        
-            <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="assets/images/carousel/slide2.jpg" style="width:100%">
-            </div>
-        
-            <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="assets/images/carousel/slide3.jpg" style="width:100%">
-            </div>
-        
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-
-    </div>
-
-    <div class="footer">
-        <ul>
-            <div class="footer-items">
-                <li><a href="#" class="footer-sellonbtn"><i class="mdi mdi-briefcase-check"></i>seller</a></li>
-                <li><a href="#" class="footer-advertisebtn"><i class="mdi mdi-star-circle"></i>advertise</a></li>
-                <li><a href="#" class="footer-helpbtn"><i class="mdi mdi-help-circle"></i>help</a></li>
-                <li><a href="#" class="footer-contactbtn"><i class="mdi mdi-phone-classic"></i>contact</a></li>
-            </div>
-            <div class="payment-method">
-                <img src="assets/images/payment/visa.png" class="payment-cards">
-                <img src="assets/images/payment/maestro.png" class="payment-cards">
-                <img src="assets/images/payment/discover.png" class="payment-cards">
-                <img src="assets/images/payment/americanexpress.png" class="payment-cards">
-                <img src="assets/images/payment/americanexpress02.png" class="payment-cards">
-                <img src="assets/images/payment/cirrus.png" class="payment-cards">
-                <img src="assets/images/payment/dinersclub.png" class="payment-cards">
-                <img src="assets/images/payment/directdebit.png" class="payment-cards">
-                <img src="assets/images/payment/egold.png" class="payment-cards">
-                <img src="assets/images/payment/paypal.png" class="payment-cards">
-            </div>
-        </ul>
-    </div>
-    <script src="assets/js/carousel.js" defer="defer" crossorigin="anonymous"></script>
+<div class="container">
+<header class="header">
+<h1>Mr. Camel</h1>
+<div class="social">
+<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+</div>
+</header>
+<aside class="left">
+<img src="./assets/html/mr-camel.jpg" width="160px" />
+<ul>
+<li><a class="active" href="#home">Home</a></li>
+<li><a href="#career">Career</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#about">About</a></li>
+</ul>
+<br><br>
+<p>"Do something important in life. I convert green grass to code."<br>- Mr Camel</p>
+</aside>
+<main class="content">
+<h2>About Me</h2>
+<p>I don't look like some handsome horse, but I am a real desert king. I can servive days without water.</p>
+<h2>My Career</h2>
+<p>I work as a web developer for a company that makes websites for camel businesses.</p>
+<hr><br>
+<h2>How Can I Help You?</h2>
+<table>
+<tr>
+<th>SKILL 1</th>
+<th>SKILL 2</th>
+<th>SKILL 3</th>
+</tr>
+<tr>
+<td><i class="fas fa-broom"></i></td>
+<td><i class="fas fa-archive"></i></td>
+<td><i class="fas fa-trailer"></i></td>
+</tr>
+<tr>
+<td>Cleaning kaktus in your backyard</td>
+<td>Storing some fat for you</td>
+<td>Taking you through the desert</td>
+</tr>
+<tr>
+</table>
+<form>
+<label>Email: <input type="text" name="email"></label><br>
+<label> Mobile: <input type="text" name="mobile"> </label><br>
+<textarea name="comments" rows="4">Enter your message</textarea><br>
+<input type="submit" value="Submit" /><br>
+</form>
+</main>
+<footer class="footer">&copy; Copyright Mr. Camel</footer>
+</div>
 </body>
 </html>
