@@ -7,7 +7,7 @@
 <title>Mr. Camel</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <style>
-    @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+    @import url("https://tse3.mm.bing.net/th/id/OIP.VcHE2k2zlYITte1SQZhOfAHaE8?pid=ImgDet&rs=1");
 
     body {
       margin: 0;
